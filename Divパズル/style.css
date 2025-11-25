@@ -1,0 +1,52 @@
+.all{
+    width:400px;
+    margin:0 auto;
+    color:white;
+}
+
+.header{
+    height:100px;
+    background:#FFCE7a;
+}
+
+.left{
+    height:250px;
+    width:150px;
+    background:#9DDDF4;
+    float:left;
+}
+
+.right{
+    width:100px;
+    height:150px;
+    background:#F89C9C;
+    float:right;
+}
+
+.center-upper{
+    width:150px;
+    height:50px;
+    background:#C2FFC8;
+    float:right;
+}
+
+.center-lower{
+    width:150px;
+    height:100px;
+    background:#FFC2C5;
+    float:right;
+}
+
+.right-center-lower{
+    width:250px;
+    height:100px;
+    background:#FFF083;
+    float:right;
+}
+
+.footer{
+    height:100px;
+    background:#BEA5FF;
+    clear:both;
+}
+/* float:rightはまず上に入る、そのうえで左側にスペースがあればそこに入り、なければ下に入る */

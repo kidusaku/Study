@@ -1,0 +1,26 @@
+@media(max-width:767px){
+    .all{ width:300px; }
+
+    .left{ width:100px; }
+    .right{ width:75px; }
+    .center-upper{ width:125px; }
+    .center-lower{ width:125px; }
+    .right-center-lower{ width:200px; }
+}
+
+@media(max-width:479px){
+    .all{
+        width:150px;
+    }
+
+    .all > * {
+        float:none;
+        width:150px;
+    }
+
+    .left{ height:100px; }
+    .right{ height:100px; }
+    .center-upper{ height:50px; }
+    .center-lower{ height:100px; }
+    .right-center-lower{ height:100px; }
+}
