@@ -1,0 +1,51 @@
+@media(max-width:479px){
+    .hedder{
+    width: 200px;
+    height: 200px;
+    padding: 20px 70px 20px 0;
+}
+
+.h-white{
+    flex-direction: column;
+    gap: 10px;
+    width: 60px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 200px;
+    flex-direction: column;
+}
+
+.left{
+    width: 200px;
+    height: 100px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.r-white{
+    width: 140px;
+    height: 40px;
+}
+
+.r-w-pink{
+    width: 130px;
+    height: 30px;
+    margin: 5px 5px;
+}
+
+.fotter{
+    width: 200px;
+}
+}

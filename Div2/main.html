@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="smartStyle2.css">
+</head>
+<body>
+    <!-- メモ：先にスマホのレイアウトも考え、上から記述する -->
+     <!--ヘッダー部分  -->
+    <div class="hedder">
+        <div class="h-white">
+            <div class="h-w">1</div>
+            <div class="h-w">2</div>
+            <div class="h-w">3</div>   <!--ヘッダー部分白枠の中の三つ-->
+        </div><!--白枠の終わり-->
+    </div>
+
+    <!-- メイン部分。左と右に分かれるがそこにDivはいらない。入れるとむしろ複雑化する可能性あり -->
+   <div class="main">
+     <div class="left"></div>  <!--青色の部分-->
+     <div class="right"> <!--緑の箇所。この後白枠の中にピンクを入れる工程を三回繰り返す。いい方法があるか後ほど探す。ネット、CHATGPT,etc-->
+
+           <!--Pink1-->
+            <div class="r-white">
+                <div class="r-w-pink">1</div>
+            </div>
+            <!--Pink2-->
+             <div class="r-white">
+                <div class="r-w-pink">2</div>
+            </div>
+            <!--Pink3-->
+            <div class="r-white">
+                <div class="r-w-pink">3</div>
+            </div>
+
+     </div> <!--Leftの終わり-->
+    </div>
+    <!-- フッター -->
+    <div class="fotter"></div>
+</body>
+</html>
