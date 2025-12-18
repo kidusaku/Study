@@ -64,21 +64,26 @@ public class Task2_9 {
     // ① 「name」の値が「USER_NAME」と等しく、「 pass 」の値が「USER_PASSWORD」と等しい場合。
     // 定数を使用して「 ログイン成功です。 」と出力して下さい。
     if(USER_NAME.equals(name)&& USER_PASSWORD.equals(pass)){
-        System.out.println("ログイン成功です");
-    }
+        System.out.println(CONST_MSG_SUCCESS);
+    }else
 
     // ② 「USER_NAME」の値のみ等しい場合。
     // 定数を使用して「 パスワードに誤りがあります。 」 と出力して下さい。
-     if(USER_NAME.equals(name) && !USER_PASSWORD.equals(pass)){
-        System.out.println("パスワードに誤りがあります");
-        }
+     if(USER_NAME.equals(name) && !(USER_PASSWORD.equals(pass))){
+        System.out.println(CONST_MSG_ERROR_PASS);
+        }else
 
     // ③ 「USER_PASSWORD」の値のみ等しい場合。
     //定数を使用して「 名前に誤りがあります。 」と出力して下さい。
+     if(!(USER_NAME.equals(name) )&& USER_PASSWORD.equals(pass)){
+        System.out.println( CONST_MSG_ERROR_NAME);
+        }else
 
     // ④ 「USER_NAME」も「USER_PASSWORD」の値も間違っていた場合。
     //定数を使用して「 入力情報に誤りがあります。 」と出力して下さい。
-
+     if(!(USER_NAME.equals(name) )&& !(USER_PASSWORD.equals(pass))){
+        System.out.println( CONST_MSG_ERROR_INPUT);
+        }
 
     // ========== 問2：switch文の課題 ==========
     // 曜日
@@ -86,6 +91,22 @@ public class Task2_9 {
     
     // ① switch文を使って、dayOfWeekの値に応じた営業時間を表示してください
     // 必ず定数を使用してください
-    // ここにswitch文を記述
+    switch(dayOfWeek){
+      case MON,TUE,WED,THU,FRI:
+       System.out.println(MSG_WEEKDAY);
+        break;
+
+      case SAT:
+       System.out.println(MSG_SATURDAY);
+        break;
+
+      case SUN:
+       System.out.println(MSG_SUNDAY);
+        break;
+
+       default:
+       System.out.println(MSG_ERROR);
+        break;
+    }
   }
 }
