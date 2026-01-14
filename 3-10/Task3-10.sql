@@ -43,13 +43,13 @@ SELECT A.Shopcode,A.Shopname,B.areaname FROM Shop A Join area B on A.areacode = 
 
 -- 8. 「新宿」店の在庫数が10以上の商品の商品コード（GoodsCode）、商品名（GoodsName）、在庫数（quantity）を抽出して下さい。
 SELECT A.GoodsCode,B.goodsname_B,A.quantity FROM 
-(select * from stocks where quantity > 10 and shopcode = '001' ) A 
+(select * from stocks where quantity >= 10 and shopcode = '001' ) A 
 join (select goodscode , goodsname as goodsname_B from goods) B
 ON A.goodscode = B.goodscode
 
 /*メモ
 SELECT A.GoodsCode,B.goodsname_B,A.quantity FROM 
-(select * from stocks where quantity > 10 ) A 
+(select * from stocks where quantity >= 10 ) A 
 join (select goodscode , goodsname as goodsname_B from goods) B
 ON A.goodscode = B.goodscode
 
