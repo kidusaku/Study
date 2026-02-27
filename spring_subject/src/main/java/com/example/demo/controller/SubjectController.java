@@ -29,7 +29,6 @@ public class SubjectController {
      */
     @Autowired
     SubjectService subjectService;
-
     /**
      * 科目情報一覧画面を表示
      * @param  model Model
@@ -39,6 +38,28 @@ public class SubjectController {
     public String subjectList(Model model) {
         List<SubjectEntity> subjectlist = subjectService.searchAll();
         model.addAttribute("subjectlist", subjectlist);
+
+        String str = "sample"; // TODO この行にブレークポイントを置いて1行ずつ進めてみましょう
+
+        try {
+            // 内側のtry-catch：特定の例外を処理
+            try {
+                int n1 = Integer.parseInt(str); // NumberFormatException発生
+                System.out.println("変換結果：" + n1);
+            } catch (NumberFormatException e) {
+                System.out.println("NumberFormatExceptionの例外が発生しました");
+            }
+
+            // 外側のtryブロックで別の処理（ここではNullPointerException発生）
+            String nullStr = null;
+            nullStr.length();
+
+        } catch (Exception e) {
+            System.out.println("外側の例外処理：何らかの例外が発生しました");
+        } finally {
+            System.out.println("外側のfinallyブロック：処理が終了しました");
+        }
+
         return "subject/list";
     }
     
