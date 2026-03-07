@@ -1,0 +1,52 @@
+.all{
+    width:400px;
+    color:white;
+}
+
+.upper{
+    height:100px;
+    margin-bottom:15px;
+   background: #9dddf4;
+}
+
+.left{
+    height:250px;
+    width: 150px;
+    background: #9dddf4;
+    float:left;
+}
+
+.right{
+    height:150px;
+    width: 100px;
+    background: #F89C9C;
+    float:right;
+}
+
+.center_u{
+    height:50px;
+    width: 150px;
+    background: #C2FFC8;
+    float:left;
+}
+
+.center_l{
+    height:100px;
+    width: 150px;
+    background: #FFC2C5;
+    float:left;
+}
+
+.center_r{
+    height:100px;
+    width: 250px;
+    margin-bottom:15px;
+    background: #FFF073;
+    float:right;
+}
+
+.lower{
+    height:100px;
+    background: #BEA5FF;
+    clear:both;
+}
