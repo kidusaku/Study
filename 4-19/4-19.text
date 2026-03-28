@@ -1,0 +1,25 @@
+問1：フレームワークの役割を説明する
+ アプリ開発やプログラミングをするうえで、必要な機能がそろった枠組み。
+　必要な機能がすでに備わってるため、コードを書く量が少なくて済むため、手早くアプリ開発をすることができる。
+また、ルールを統一できるため、チーム内で見返すときも、見やすい利点もある
+
+問2：MVCの責務整理
+
+Model：実際にコードを書き動かすところ
+View：Modelが得た情報とコントローラからの指示をもとに、お客様に表示する画面を用意するところ
+Controller：お客様から受けたリクエストをもとに、ViewyaModelに指示を出す司令塔の役目
+
+問3：画面遷移の流れを書く
+ログイン画面（View）でユーザーがID・パスワードを入力して送信
+Controllerがリクエストを受け取る
+ControllerがModelに処理を出す
+Modelがデータベースと照合して結果を返す
+Controllerが結果を受け取り、表示用データをModelに詰める
+ControllerがViewに出す画面を指示する
+ログイン完了画面（View）に結果が表示される
+
+問4：MVC構成のサンプル設計
+①Controller名（BookController）
+②Model名（BookService）
+③View名（booklist.html）
+④Controllerが呼び出すメソッド名（List<BookEntity>findAll）
